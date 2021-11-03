@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Beers</h1>
+    <ul>
+        {% for beer in beers %}
+            <li><a href="/beers/show?id={{ beer.id }}">{{ beer.id }}. {{ beer.name }}</a></li>
+        {% else %}
+            <li>Nothing to display</li>
+        {% endfor %}
+    </ul>
+    <a href="/beers/add">Ajouter</a>
+{% endblock %}

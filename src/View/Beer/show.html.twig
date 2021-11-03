@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Beers {{ beers.name }}</h1>
+    <p>{{ beers.id }}. {{ beers.name }}</p>
+    <a href="/beers/edit?id={{ beers.id }}">Edit</a>
+    <form action="/beers/delete" method="POST">
+        <input type="hidden" name="id" value="{{ beers.id }}">
+        <button>Delete</button>
+    </form>
+    <p>{{beers.description}}</p>
+    
+    <a href="/">Back</a>
+
+{% endblock %}

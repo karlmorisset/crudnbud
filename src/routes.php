@@ -7,10 +7,28 @@
 //          3. (optional) array of query string keys to send as parameter to the method
 // e.g route '/item/edit?id=1' will execute $itemController->edit(1)
 return [
-    '' => ['HomeController', 'index',],
-    'items' => ['ItemController', 'index',],
-    'items/edit' => ['ItemController', 'edit', ['id']],
-    'items/show' => ['ItemController', 'show', ['id']],
-    'items/add' => ['ItemController', 'add',],
-    'items/delete' => ['ItemController', 'delete',],
+    '' => ['BeerController', 'index',],
+    'beers/show' => ['BeerController', 'show', ['id']],
+    'beers/add' => ['BeerController', 'add',],
+    'beers/create' => ['BeerController', 'create',],
+
+    // 'items/edit' => ['ItemController', 'edit', ['id']],
+    // 'items/show' => ['ItemController', 'show', ['id']],
+    // 'items/delete' => ['ItemController', 'delete',],
+
+
 ];
+
+//Bonjour
+
+//Qui es-tu ?
+
+// Je suis ton père
+
+// NOOOOOOOOOOOOOOEL!  ☃ 
+
+// ¯\_(ツ)_/¯ <3
+
+// ヽ(〃＾▽＾〃)ﾉ 
+
+//vive la bière et le muscadet
